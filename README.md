@@ -1,167 +1,250 @@
-# MATH7810 — Set up your GitHub account
+# GitHub, Codespaces & Lab ready
 
-**Course:** Python for Data Science (AY2026/27)  
-**Purpose:** Before the first Codespaces lab, every student should have a working **GitHub** account with **two-factor authentication (2FA)** and, if eligible, **GitHub Education** student benefits (for GitHub Copilot and more Codespaces minutes).
+## What you will learn
 
-**Time needed:** about **20–40 minutes**. Do this **before** the first in-class Codespaces session.
-
----
-
-## What you will finish
-
-By the end of this guide you should have:
-
-1. A free **GitHub account**
-2. **2FA** turned on (required by GitHub for many student features)
-3. An application for **GitHub Education** / student benefits
+1. What a **repo** is and how to work in **your own copy** (fork) on GitHub.
+2. Use **Codespaces** (our online classroom computer) — and that the **first open is slow**.
+3. Open a Jupyter notebook, pick the right **kernel**, and run a cell.
+4. **Commit** and **Push** so your work is saved on **your** GitHub (portfolio habit).
+5. **Sync fork** later when the instructor adds new week folders.
+6. **Stop** your Codespace to save minutes.
 
 ---
 
-## Plain words
+## Start here: what is a **repo**?
 
-| Word | Meaning |
-|------|---------|
-| **GitHub** | A website that stores course project folders online. We use it for weekly lab notebooks. |
-| **Account** | Your login (username + university email + password) on github.com. |
-| **Two-factor authentication (2FA)** | Extra security: after your password, you confirm with a phone app or code. GitHub often **requires** this for Education benefits. |
-| **GitHub Education / Student Developer Pack** | Free student benefits (including access related to **GitHub Copilot**, and extra **Codespaces** time when approved). You apply with your **university student status**. |
-| **Codespaces** | A coding workspace in the browser, linked to a GitHub folder. You will use it later to run Jupyter notebooks. |
-| **Fork** | Your own copy of the course labs folder on GitHub. You will create one later and keep it for the whole term. |
+### Repository (**repo**) — plain meaning
 
----
+A **repo** is a **project folder on the internet** that holds course materials:
 
-## Step 1 — Create a GitHub account
+- notebooks (`.ipynb`)
+- data files (`.csv`) when needed
+- instructions (`README.md`)
 
-1. Open [https://github.com](https://github.com).
-2. Click **Sign up**.
-3. Enter:
-   - a username (this will appear as `yourusername/...` on GitHub)
-   - an email you can access (please use your **BU email**, for education benefit application)
-   - a strong password
-4. Verify you are human / complete email verification if GitHub asks.
-5. Sign in and confirm you can see your profile (e.g. `https://github.com/yourusername`).
+**This course uses one labs repo** for the term: `MATH7810`. Your instructor adds new week folders over time; you keep **one fork** and **Sync** to get updates.
 
-**Tips**
+### Then: GitHub, fork, Codespace, Sync, Commit, Push
 
-- Use a username you are happy to show instructors.
-- Keep your password in a password manager if you use one.
-- If you **already** have a GitHub account, skip to Step 2 — do **not** create a second account unless your instructor says so.
 
----
+| Word                       | Plain meaning                                                                                                                     |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **GitHub**                 | The website that **hosts** repos.                                                                                                 |
+| **Fork** (verb)            | Click **Fork** to **make your own copy** of the instructor’s repo under **your** account.                                         |
+| **Fork** (noun)            | **Your fork** = **your own copy** on github.com. You work there; the instructor’s original stays unchanged.                       |
+| **Codespace**              | A **classroom computer in the browser** with your fork already open — you run notebooks there.                                    |
+| **Sync fork**              | Pull **new files** the instructor added (e.g. Week 2 notebooks) into **your** fork.                                               |
+| **Save** (in the notebook) | Keeps edits on the **Codespace** while it is open (`File → Save`).                                                                |
+| **Commit**                 | **Stamp this version on the Codespace** — a named snapshot (e.g. “Week 1 lab ready”). Still only on the Codespace until you Push. |
+| **Push**                   | **Send** those stamped versions to **your fork on github.com**.                                                                   |
+| **Stop Codespace**         | Turn off the cloud computer so you do not burn Codespaces minutes (180 hrs/month).                                                |
 
-## Step 2 — Turn on two-factor authentication (2FA)
 
-GitHub may block Education benefits or some actions until 2FA is on.
+**Analogies**
 
-### 2A — Install an authenticator app (recommended)
 
-On your phone, install one of:
+| Idea          | Analogy                                                                      |
+| ------------- | ---------------------------------------------------------------------------- |
+| **Repo**      | One shared course folder online.                                             |
+| **Fork**      | Duplicate the folder into **your** drive; you edit your duplicate.           |
+| **Codespace** | A lab PC that already has the folder open — no USB, no “wrong Desktop path”. |
+| **Sync fork** | Download the teacher’s new handouts into your duplicate folder.              |
+| **Save**      | Save the file on that lab PC.                                                |
+| **Commit**    | Stamp a named version **on the lab PC**.                                     |
+| **Push**      | Upload those stamped versions to **your** online folder on GitHub.           |
 
-- **Microsoft Authenticator**
-- **Google Authenticator**
-- **Authy**
-
-(You only need **one**.)
-
-### 2B — Enable 2FA on GitHub
-
-1. Sign in to GitHub.
-2. Click your profile photo (top right) → **Settings**.
-3. In the left sidebar: **Password and authentication** (under Access).
-4. Find **Two-factor authentication** → **Enable**.
-5. Follow GitHub’s steps:
-   - usually scan a **QR code** with your authenticator app
-   - enter the **6-digit code** from the app
-6. **Save your recovery codes** somewhere safe (password manager, printed paper, or encrypted notes).  
-   If you lose your phone, these codes can unlock your account.
-
-**If you get stuck:** use GitHub’s official guide:  
-[Configuring two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication)
 
 ---
 
-## Step 3 — Apply for GitHub Education (student benefits)
 
-This helps you use **GitHub Copilot** and gives you **your own** Codespaces hours (not shared with the whole class).
 
-1. Open GitHub Education:  
-   [https://education.github.com](https://education.github.com)
-2. Sign in with the **same** GitHub account from Step 1.
-3. Look for **Students** / **Get student benefits**.
-4. Start the application. You will typically need to prove you are a current student, for example:
-   - university email, and/or
-   - student ID / enrollment document (follow the on-screen list)
-5. Submit and wait for approval.
-   - Approval may take **minutes to a few days**.
-   - Check your email (and spam folder).
+## In class — fork and Codespace
 
-**Official docs (if the website layout changes):**
 
-- [GitHub Education](https://education.github.com)
-- [GitHub Education documentation](https://docs.github.com/en/education)
-- Account education settings (when signed in): [https://github.com/settings/education](https://github.com/settings/education)
 
-**If your application is pending or rejected**
+### Step 1 — GitHub account (should already be done)
 
-- You can still join the first Codespaces lab with a normal free account.
-- Copilot or Codespaces minutes may be limited until Education is approved — tell your instructor if you are still waiting.
+You should already have:
+
+- a GitHub account  
+- **2FA** on  
+- applied for **GitHub Education** (Moodle checklist)
+
+If not, create an account at [github.com](https://github.com) now, then continue — and finish 2FA / Education after class.
+
+### Step 2 — Fork the instructor’s labs repo (**once for the term**)
+
+1. Open the course repo your instructor shares:
+  [https://github.com/taliawu17/MATH7810](https://github.com/taliawu17/MATH7810)
+2. Click **Fork** (top right) → create under **your** username.
+3. Check the URL: `yourusername/MATH7810` — **your** name must appear.
+
+You now have **your own repo** for the whole term. Do **not** fork again each week.
+
+### Step 3 — Start a Codespace from **your fork**
+
+1. Open **your fork** (not only the instructor’s page).
+2. Click green **Code** → tab **Codespaces** → **Create codespace on main**.
+3. **Wait.** The first time often takes **1–3 minutes** (sometimes **5–10**). You may see “Setting up your codespace” — this is normal.
+  - **Do not** expect it to open instantly.  
+  - **Do not** keep clicking **Create** (that makes many Codespaces and wastes minutes).
+
+GitHub will **automatically name** each Codespace (e.g. `fuzzy-pancake`). You do not choose the name.
+
+**Next time you work:** open the **same** Codespace from **Code → Codespaces** (click its name). Reopening is usually faster than the first create, but can still take under a minute to a few minutes. Do **not** create a new Codespace every class unless the old one was deleted.
+
+### Step 4 — Open this guide’s folder and a notebook
+
+1. In the left file tree, open `week01_github_codespaces/` (this folder).
+2. When your instructor adds `W01_Ch1_PythonBasics.ipynb` (or a short check notebook), open that `.ipynb`.
+3. Click **Run** on a cell. When asked to **Select Kernel**:
+  - Choose **Python Environments** (not “Jupyter Kernel”, not “Existing Jupyter Server”).
+  - Then choose **Python 3.12.x** whose path looks like `/usr/local/.../python`.  
+  - **Do not** choose **+ Create Python Environment**.  
+  - If several “Python 3.12” lines appear, pick one under `/usr/local/` and continue.
+4. Run a simple check, for example in a code cell:
+
+```python
+import numpy as np
+import pandas as pd
+print("Lab ready:", np.__version__, pd.__version__)
+```
+
+If Codespace asks to **Install/Enable** Python + Jupyter first, say yes, wait, then:
+
+`Ctrl+Shift+P` (Windows) or `Cmd+Shift+P` (Mac) → type **Reload Window** → Enter → open the notebook again → Select Kernel as above.
+
+### Step 5 — Green-light check (lab ready)
+
+You are **lab ready** when you can:
+
+- Open a `.ipynb` in Codespace (not as raw JSON text)  
+- Select a **Python 3.12** kernel under `/usr/local/`  
+- `import numpy` and `import pandas` without error
+
+
+
+### Step 6 — Commit and Push (required habit)
+
+Remember: **Commit** = stamp on the Codespace; **Push** = send to **your fork** on github.com. Commit alone does **not** update the GitHub website.
+
+1. **Save** the notebook (`File → Save`).
+2. **Source Control** (branch icon, left sidebar) → stage your files (**+**).
+3. Write a short message (e.g. `Week 1 lab ready`) → **Commit** → **Sync Changes** / **Push**.
+4. Refresh **your fork** on github.com — you should see the update **after Push**.
+
+You only push to **your fork**, never the instructor’s original repo.
+
+### Step 7 — Stop the Codespace
+
+1. On github.com, open **your fork** → **Code** → **Codespaces**.
+2. Find your Codespace → **⋯** (or stop control) → **Stop codespace**.
+3. Close the browser tab.
+
+Do **not** leave Codespaces running overnight — minutes are limited (especially before Education is approved).
 
 ---
 
-## Step 4 — Codespaces minutes (read this once)
 
-When Education is approved, Codespaces time is typically **per student account**, not one pool for the whole class.
 
-**Good habits (save your minutes):**
+## Later weeks — Sync fork (same fork all term)
 
-- **Stop** your Codespace when you finish class or homework (do not leave it running overnight).
-- Prefer a **smaller** machine size if GitHub offers a choice.
-- Close the browser tab after you have stopped the Codespace.
+When the instructor adds new notebooks:
 
-If you run out of minutes mid-term, contact your instructor; a short fallback plan will be announced on Moodle if needed.
+1. On github.com, open **your fork** of `MATH7810`.
+2. Click **Sync fork** (if GitHub shows that your fork is behind).
+3. Reopen your **existing** Codespace (or create one if you stopped/deleted it).
+4. Work → **Commit** → **Push** → **Stop** Codespace.
 
----
-
-## Step 5 — Checklist (bring this to the first Codespaces lab)
-
-Before the first in-class Codespaces session, check:
-
-- [ ] I can sign in at [github.com](https://github.com)
-- [ ] **2FA** is enabled
-- [ ] I saved **recovery codes** somewhere safe
-- [ ] I **applied** for GitHub Education (or already have student benefits)
-- [ ] I know my **GitHub username** (write it here: `________________`)
+You do **not** create a new fork each week.
 
 ---
 
-## Common problems
 
-| Problem | What to try |
-|---------|-------------|
-| No verification email | Check spam; request a new verification email from GitHub |
-| Cannot turn on 2FA | Use the official 2FA guide; try a different authenticator app |
-| Lost phone / cannot open authenticator | Use a **recovery code**; if none left, follow GitHub account recovery help |
-| Education application “pending” | Wait and check email; still come to the Codespaces lab |
-| Education rejected | Re-read GitHub’s reason; use university email or clearer student proof; ask instructor/TA if still blocked |
+
+## Troubleshooting
+
+
+| Problem                                                   | What to do                                                                                                                                      |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Codespace will not open / stuck on “Setting up”           | **Wait several minutes.** First setup is slow. Do **not** click Create repeatedly. If still stuck after ~10 minutes, refresh once or ask a TA.  |
+| `.ipynb` looks like text (JSON) **on the GitHub website** | Do not edit there. Open a **Codespace**, then open the notebook.                                                                                |
+| `.ipynb` looks like text (JSON) **inside Codespace**      | Install extensions (see below), then **Reload Window**.                                                                                         |
+| Error: `markdown-it-renderer` / notebook editor           | Install **Python** + **Jupyter** + **Jupyter Notebook Renderers**, then **Reload Window**.                                                      |
+| Prompt: install recommended **Python** extension?         | Choose **Yes** (Microsoft).                                                                                                                     |
+| Error: cannot open … `jupyter-notebook`                   | Install **Jupyter** (Microsoft), Reload Window. Do **not** choose “Open in Text Editor” for class work.                                         |
+| `ModuleNotFoundError: pandas` (or numpy)                  | Wait until Codespace **finishes building**. Then in the Codespace terminal: `pip install -r requirements.txt` → **Restart kernel** → try again. |
+| Opened instructor’s repo by mistake                       | Open **your fork** (`yourusername/MATH7810`) and create/open Codespace **there**.                                                               |
+| Lost my Codespace / everything feels new                  | You may have created a **new** Codespace. On your fork: **Code → Codespaces** → open the **existing** named one.                                |
+| Many Python 3.12 options when selecting kernel            | **Python Environments** → a **Python 3.12** under `/usr/local/`. Skip **Create Python Environment**.                                            |
+| Education still pending                                   | Still do this lab with a free account; tell the instructor if Copilot/minutes are limited.                                                      |
+
+
+
+
+### Notebook shows as JSON, or renderer error (in Codespace)
+
+1. Click **Extensions** (four squares on the left).
+2. Install (publisher: **Microsoft**): **Python**, **Jupyter**, **Jupyter Notebook Renderers**.
+3. `Ctrl/Cmd+Shift+P` → **Developer: Reload Window**.
+4. Close the notebook tab → open the `.ipynb` again.
+5. If still JSON: right-click → **Open With…** → **Jupyter Notebook**.
+6. Still broken? `Ctrl/Cmd+Shift+P` → **Codespaces: Rebuild Container** (wait a few minutes).
+
+
+
+### Where is “Reload Window”?
+
+1. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac).
+2. Type `Reload Window`.
+3. Click **Developer: Reload Window**.
+
+
+
+### Select Kernel — what students usually see
+
+**First screen:**
+
+
+| Option                      | What to do                                |
+| --------------------------- | ----------------------------------------- |
+| **Python Environments**     | **Choose this**.                          |
+| **Jupyter Kernel**          | Skip unless an instructor says otherwise. |
+| **Existing Jupyter Server** | Skip.                                     |
+
+
+**Second screen:**
+
+
+| Option                               | What to do         |
+| ------------------------------------ | ------------------ |
+| **+ Create Python Environment**      | **Do not choose**. |
+| **Python 3.12.x …** `/usr/local/...` | **Choose this**.   |
+
+
+Why so many Pythons? Codespace lists every Python it finds. Prefer `/usr/local/`.
 
 ---
 
-## What happens next (first Codespaces lab)
 
-In the next lab you will:
 
-1. **Fork** this course labs repository (make **your own copy** for the whole term)
-2. Open a **Codespace** on **your** fork
-3. Practice Sync / Commit / Push / Stop Codespace (`week01_github_codespaces`)
-4. Later weeks: new notebooks appear in this repo — you **Sync fork**, then work and **push** your changes
+## GitHub Copilot (if enabled)
 
-You do **not** need to do those steps in this account-setup guide.
-
-**Note:** Weekly labs are **practice** (not weekly Moodle uploads). The **individual case study** is still submitted on Moodle.
+Sign in to Copilot in Codespaces if your Education benefits include it. After it suggests code: **run** → **read output** → **edit or reject** if wrong. (MATH7810 habit: you think first → AI → compare → decide.)
 
 ---
+
+
+
+## What happens next
+
+- Continue with `W01` **Python basics** (and **V1** vibe lab) when your instructor adds those notebooks.  
+- Each later week: **Sync fork** → Codespace → work → **Commit + Push** → **Stop**.  
+- Weekly labs are **practice** (not weekly Moodle uploads). The **individual case study** is still submitted on **Moodle**.
+
+---
+
+
 
 ## Privacy note
 
-Do not share your password, 2FA codes, or recovery codes with classmates. Instructors will never ask for your password.
-
+Do not share your password, 2FA codes, or recovery codes. Instructors will never ask for your password.
