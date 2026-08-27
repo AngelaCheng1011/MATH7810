@@ -1,0 +1,20 @@
+# Python packages for MATH7810 labs (Codespaces)
+# Scanned imports from labs_2627/ (+ root demo notebooks for completeness).
+# Stdlib only (e.g. math, random, json, csv, pathlib) — not listed.
+
+# Core scientific stack (used across W/V notebooks)
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.13
+scipy>=1.10
+
+# Hypothesis testing helpers (W09 / HT labs)
+statsmodels>=0.14
+
+# Simple linear regression / ML-style fits (Ch5 SLR intro + case study)
+scikit-learn>=1.3
+
+# Jupyter in Codespaces
+jupyterlab>=4.0
+ipykernel>=6.25
