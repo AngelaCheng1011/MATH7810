@@ -1,6 +1,6 @@
 {
   "name": "MATH7810-labs",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {},
   "postCreateCommand": "pip install -r requirements.txt",
   "customizations": {
