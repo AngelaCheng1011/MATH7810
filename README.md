@@ -84,7 +84,7 @@ You now have **your own repo** for the whole term. Do **not** fork again each we
 
 1. Open **your fork** (not only the instructor’s page).
 2. Click green **Code** → tab **Codespaces** → **Create codespace on main**.
-3. **Wait.** The first time often takes **1–3 minutes** (sometimes **5–10**). You may see “Setting up your codespace” — this is normal.
+3. **Wait.** The first time often takes **1–5 minutes**. You may see “Setting up your codespace” — this is normal.
   - **Do not** expect it to open instantly.  
   - **Do not** keep clicking **Create** (that makes many Codespaces and wastes minutes).
 
@@ -94,14 +94,14 @@ GitHub will **automatically name** each Codespace (e.g. `fuzzy-pancake`). You do
 
 ### Step 4 — Open this guide’s folder and a notebook
 
-1. In the left file tree, open `week01_github_codespaces/` (this folder).
-2. When your instructor adds `W01_Ch1_PythonBasics.ipynb` (or a short check notebook), open that `.ipynb`.
+1. In the left file tree, open `week01` (this folder).
+2. When your instructor adds `W01_Ch1_PythonBasics.ipynb`, open that `.ipynb`.
 3. Click **Run** on a cell. When asked to **Select Kernel**:
   - Choose **Python Environments** (not “Jupyter Kernel”, not “Existing Jupyter Server”).
   - Then choose **Python 3.12.x** whose path looks like `/usr/local/.../python`.  
   - **Do not** choose **+ Create Python Environment**.  
   - If several “Python 3.12” lines appear, pick one under `/usr/local/` and continue.
-4. Run a simple check, for example in a code cell:
+4. Run the first cell for simple check:
 
 ```python
 import numpy as np
@@ -128,9 +128,11 @@ You are **lab ready** when you can:
 Remember: **Commit** = stamp on the Codespace; **Push** = send to **your fork** on github.com. Commit alone does **not** update the GitHub website.
 
 1. **Save** the notebook (`File → Save`).
-2. **Source Control** (branch icon, left sidebar) → stage your files (**+**).
-3. Write a short message (e.g. `Week 1 lab ready`) → **Commit** → **Sync Changes** / **Push**.
-4. Refresh **your fork** on github.com — you should see the update **after Push**.
+2. Open **Source Control** (branch icon, left sidebar).
+3. Write a short message (e.g. `Week 1 lab done`) → **Commit**.
+   - If Codespace asks to **stage all changes and commit**, choose **Yes**.
+4. Click **Sync Changes** / **Push**.
+5. Refresh **your fork** on github.com — you should see the update **after Push**.
 
 You only push to **your fork**, never the instructor’s original repo.
 
@@ -140,7 +142,7 @@ You only push to **your fork**, never the instructor’s original repo.
 2. Find your Codespace → **⋯** (or stop control) → **Stop codespace**.
 3. Close the browser tab.
 
-Do **not** leave Codespaces running overnight — minutes are limited (especially before Education is approved).
+Do **not** leave Codespaces running overnight — minutes are limited especially before Education is approved.
 
 ---
 
@@ -152,8 +154,10 @@ When the instructor adds new notebooks:
 
 1. On github.com, open **your fork** of `MATH7810`.
 2. Click **Sync fork** (if GitHub shows that your fork is behind).
-3. Reopen your **existing** Codespace (or create one if you stopped/deleted it).
-4. Work → **Commit** → **Push** → **Stop** Codespace.
+3. Open **Code → Codespaces** and reopen your **existing** Codespace even if you **stopped** it earlier.  
+   **Stop** only turns the machine off — it is still in the list. Prefer this over creating a new Codespace (saves minutes; keeps any work you had not pushed yet).
+4. If the new week folder does not appear yet, **Pull** in the Codespace (Source Control → **⋯** → **Pull**, or in the terminal: `git pull`).
+5. Work → **Commit** → **Push** → **Stop** Codespace.
 
 You do **not** create a new fork each week.
 
@@ -224,17 +228,6 @@ You do **not** create a new fork each week.
 Why so many Pythons? Codespace lists every Python it finds. Prefer `/usr/local/`.
 
 ---
-
-
-
-## GitHub Copilot (if enabled)
-
-Sign in to Copilot in Codespaces if your Education benefits include it. After it suggests code: **run** → **read output** → **edit or reject** if wrong. (MATH7810 habit: you think first → AI → compare → decide.)
-
----
-
-
-
 ## What happens next
 
 - Continue with `W01` **Python basics** (and **V1** vibe lab) when your instructor adds those notebooks.  
@@ -242,8 +235,6 @@ Sign in to Copilot in Codespaces if your Education benefits include it. After it
 - Weekly labs are **practice** (not weekly Moodle uploads). The **individual case study** is still submitted on **Moodle**.
 
 ---
-
-
 
 ## Privacy note
 
