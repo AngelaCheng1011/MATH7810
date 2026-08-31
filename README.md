@@ -127,12 +127,12 @@ You are **lab ready** when you can:
 
 Remember: **Commit** = stamp on the Codespace; **Push** = send to **your fork** on github.com. Commit alone does **not** update the GitHub website.
 
-1. **Save** the notebook (`File → Save`).
-2. Open **Source Control** (branch icon, left sidebar).
-3. Write a short message (e.g. `Week 1 lab done`) → **Commit**.
-   - If Codespace asks to **stage all changes and commit**, choose **Yes**.
-4. Click **Sync Changes** / **Push**.
-5. Refresh **your fork** on github.com — you should see the update **after Push**.
+1. **Save** the notebook (`File → Save` `文件 → 保存`).
+2. Open **Source Control** (branch icon, left sidebar 源代码控制).
+3. Write a short message (e.g. `Week 1 lab done`) → **Commit** 提交.
+   - If Codespace asks to **stage all changes and commit**, choose **Yes**. 暂存所有变更并提交
+4. Click **Sync Changes** / **Push**. 同步变更 / 推送
+5. Refresh **your fork** on github.com — you should see the update **after Push**. 
 
 You only push to **your fork**, never the instructor’s original repo.
 
